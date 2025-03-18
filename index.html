@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Jogo da Adivinhação</h1>
+        <p>O jogo consiste em tentar adivinhar o número gerado pelo sistema.<br>
+            Incira um número inteiro igual ou maior que 1 e menor ou igual a 100, você tem 10 chances para acerto.</p>
+        <input type="number" placeholder="Digite aui o número escolhido" id="numSerTest">
+        <section>
+            <button type="button" onclick="chute()">Chute</button>
+            <button type="button" onclick="nova()">Tentar Novamente</button>
+        </section>
+    </main>
+    <p id="resultado"></p>
+</body>
+
+</html>
