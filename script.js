@@ -6,14 +6,14 @@ function chute() {
     let p = document.getElementById('resultado');
     if(cont < 10){
         if(palpite == numAleat){
-            p.innerHTML = `Parabéns, o numero gerado pelo sistema é ${numAleat}.
-            Escolha outro número.`;
+            p.innerHTML = `Parabéns, o número gerado pelo sistema é ${numAleat}.
+            Vamos tentar outra vez? Escolha outro número.`;
             cont = -1;
             numAleat = parseInt(Math.random()*100)+1;
         }else if(palpite < numAleat){
-            p.innerHTML = `Seu palpite é menor que o número gerado. Restam ${9 - cont} palpites.`;
+            p.innerHTML = `Tente um número maior. Restam ${9 - cont} palpites.`;
         }else {
-            p.innerHTML = `Seu palpite é maior que o número gerado. Restam ${9 - cont} palpites.`;
+            p.innerHTML = `Tente um número menor. Restam ${9 - cont} palpites.`;
         }
     }else {
         p.innerHTML = `Você não tem mais palpites.`
