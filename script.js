@@ -6,7 +6,7 @@ function chute() {
     let p = document.getElementById('resultado');
     if(cont < 10){
         if(palpite == numAleat){
-            p.innerHTML = `Parabéns, o número gerado pelo sistema é ${numAleat}.
+            p.innerHTML = `Parabéns, você acertou na ${cont + 1}ª tentativa.
             Vamos tentar outra vez? Escolha outro número.`;
             cont = -1;
             numAleat = parseInt(Math.random()*100)+1;

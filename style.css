@@ -3,12 +3,13 @@
 }
 
 main {
+    background-color: #fdfffd;
     border: 2px solid #8f8;
     border-radius: 10px;
     width: 520px;
     margin: 30px auto;
     padding: 20px;
-    box-shadow: 3px 3px 3px #ccc;
+    box-shadow: 3px 3px 7px #ccc;
 }
 
 h1 {
